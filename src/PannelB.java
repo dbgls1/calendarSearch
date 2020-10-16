@@ -8,13 +8,13 @@ import javax.swing.SwingConstants;
 
 class PanelB extends JPanel{
 	
-	int startDay;
-	int lastDay;
+	static int startDay;
+	static int lastDay;
 	
 	public PanelB(int startDay, int lastDay) {
 		this.startDay=startDay;
 		this.lastDay=lastDay;
-			
+		
 		setLayout(new GridLayout(6,7,5,4));
 		setBackground(Color.LIGHT_GRAY);
 		
@@ -51,4 +51,8 @@ class PanelB extends JPanel{
 		System.out.println(lastDay);*/
 	}
 	
+	public static void main(String args[]) {
+		
+		new PanelB(startDay, lastDay);
+	}
 }

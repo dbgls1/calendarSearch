@@ -23,8 +23,9 @@ import javax.swing.SwingConstants;
 //https://hyeonstorage.tistory.com/205  ,참조
 public class CalendarSearchEx extends JFrame{
 	
-	
-	static int startDay=3;
+	//처음 시작화면을 현재 달력으로 표시하려면??
+		
+	static int startDay;
 	static int lastDay=31;
 	
 	public CalendarSearchEx(int startDay, int lastDay) {
@@ -43,12 +44,8 @@ public class CalendarSearchEx extends JFrame{
 		//달력표시창
 		c.add(new PanelB(startDay, lastDay), BorderLayout.CENTER);
 		
-		/*System.out.println(startDay);
-		System.out.println(lastDay);*/
-		
 		setSize(900, 600);
 		setVisible(true);
-		//repaint();
 		
 	}
 
