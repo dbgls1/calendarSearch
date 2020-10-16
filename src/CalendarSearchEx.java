@@ -45,6 +45,7 @@ public class CalendarSearchEx extends JFrame{
 		c.add(new PanelB(startDay, lastDay), BorderLayout.CENTER);
 		
 		setSize(900, 600);
+		setLocation(100, 100);
 		setVisible(true);
 		
 	}

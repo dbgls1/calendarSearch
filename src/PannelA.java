@@ -68,7 +68,7 @@ class PanelA extends JPanel{
 				cal.set(Calendar.DATE, day);*/
 				
 				//해당 월의 첫 시작 요일 가져오기
-				int startDay = cal.get(Calendar.DAY_OF_WEEK)-2;
+				int startDay = cal.get(Calendar.DAY_OF_WEEK)-2+7;
 				//해당 월의 마지막 날짜 가져오기
 				int lastDay = cal.getActualMaximum(Calendar.DATE);
 				
@@ -78,8 +78,10 @@ class PanelA extends JPanel{
 				
 				//새로 객체 생성..이게 최선인가..
 				//new PanelB(startDay, lastDay);
-				new CalendarSearchEx(startDay, lastDay);
+				new ResultWinodw(startDay, lastDay);
 				
+				System.out.println(startDay);
+				System.out.println(lastDay);
 			}
 		});
 	}

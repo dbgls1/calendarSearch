@@ -15,7 +15,7 @@ class PanelB extends JPanel{
 		this.startDay=startDay;
 		this.lastDay=lastDay;
 		
-		setLayout(new GridLayout(6,7,5,4));
+		setLayout(new GridLayout(0,7,5,4));
 		setBackground(Color.LIGHT_GRAY);
 		
 		String str[] = {"일","월","화","수","목","금","토"};
@@ -47,8 +47,6 @@ class PanelB extends JPanel{
 			add(la);
 		}
 		
-		/*System.out.println(startDay);
-		System.out.println(lastDay);*/
 	}
 	
 	public static void main(String args[]) {
