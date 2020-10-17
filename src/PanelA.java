@@ -76,12 +76,17 @@ class PanelA extends JPanel{
 				//날짜가 새로 뜨는 창에 안붙고 이전 창에 붙임
 				la1.setText(year+"년 "+month+"월 달력     ");
 				
-				//새로 객체 생성..이게 최선인가..
-				//new PanelB(startDay, lastDay);
 				new ResultWinodw(startDay, lastDay);
 				
-				System.out.println(startDay);
-				System.out.println(lastDay);
+			}
+		});
+		//리스너 부착
+		str2[1].addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				b.doClick();
+				
 			}
 		});
 	}
